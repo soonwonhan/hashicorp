@@ -1,6 +1,17 @@
 # Getting Started with Terraform
 
-Terraform is an Infrastructure as Code tool that lets you define both cloud and on-prem resources in human-readable configuration files that you can version, reuse, and share (https://developer.hashicorp.com/terraform/intro).
+Terraform is the most popular langauge for defining and provisioning infrastructure as code (IaC). 
+Through this tutorial, you will learn how to:
+* Install Terraform
+* Create a file for your Terraform configuration code
+* Apply planned provisions to your infrastructure
+* Destroy a preexisting infrastructure
+
+## Prerequisites
+* Command-Line Interface
+  - Mac terminal, Windows Command Prompt
+* Infrastructure provider
+  - Amazon Web Services, Azure, Terraform Cloud, Google Cloud Platform, Oracle Cloud, Docker
 
 To install Terraform, 
 1. Simply visit [Terraform.io](https://developer.hashicorp.com/terraform/downloads).
@@ -8,7 +19,7 @@ To install Terraform,
 3. Download the latest version of Terraform.
 4. Open the download and follow the installation steps.
 
-With Terraform installed, let's dive right into it and start creating some infrastructure.
+Let's start creating some infrastructure.
 
 Most guys find it easiest to create a new directory on their local machine through the terminal. 
 
