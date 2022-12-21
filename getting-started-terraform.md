@@ -14,7 +14,7 @@ Through this tutorial, you will learn how to:
 * Infrastructure provider
   - Amazon Web Services, Azure, Terraform Cloud, Google Cloud Platform, Oracle Cloud, Docker
 
-##Installing Terraform
+## Installing Terraform
 
 To install Terraform, 
 1. Visit [Terraform.io](https://developer.hashicorp.com/terraform/downloads).
@@ -24,7 +24,7 @@ To install Terraform,
 
 Let's start by creating some infrastructure.
 
-##Creating Infrastructure
+## Creating Infrastructure
 
 1. Open your Command-Line Interface.
 2. Create a new directory on your local machine.
@@ -66,7 +66,7 @@ resource "docker_image" "nginx" {
 }
 ```
 
-##Applying provisions
+## Applying provisions
 
 1. Initialize Terraform with the `init` command. The AWS provider will be installed. 
 
@@ -94,14 +94,11 @@ $ terraform destroy
 2. Look for a message at the bottom of the output asking for confirmation. Type `yes` and hit ENTER. Terraform will destroy the resources it had created earlier.
 
 
-#Next Steps
+# Next Steps
+You have successfully completed your first Terraform tutorial. You installed Terraform, applied your first file to AWS, and destroyed an infrastructure.
+You can now move on to exploring more in-depth Terraform tutorials here: [Tutorials](https://developer.hashicorp.com/terraform/tutorials)
 
-
-In this section, start with a brief summary of what you have learned in this guide re-emphasizing the business value. 
-Then provide some guideance on the next steps to extend the user's knowledge. 
-Briefly describe what the user will do in the next guide if the current track is sequential.
-
-##Additional Resources
+## Additional Resources
 * [Documentation](https://developer.hashicorp.com/terraform/docs)
 * [Tutorials](https://developer.hashicorp.com/terraform/tutorials)
 * [Webinars](https://www.hashicorp.com/events/webinars/recorded?product=terraform&type=all)
