@@ -1,7 +1,7 @@
 # Getting Started with Terraform
 
 Terraform is the most popular langauge for defining and provisioning infrastructure as code (IaC). 
-Through this tutorial, you will learn how to:
+Through this tutorial, you will learn the basics to:
 * Install Terraform
 * Create a file for your Terraform configuration code
 * Apply planned provisions to your infrastructure
