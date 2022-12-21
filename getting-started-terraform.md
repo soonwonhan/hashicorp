@@ -23,7 +23,7 @@ To install Terraform,
 
 Let's start by creating some infrastructure.
 
-## Creating Infrastructure
+## Creating a file
 
 1. Open your Command-Line Interface.
 2. Create a new directory on your local machine.
