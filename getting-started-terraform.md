@@ -8,33 +8,39 @@ Through this tutorial, you will learn how to:
 * Destroy a preexisting infrastructure
 
 ## Prerequisites
+
 * Command-Line Interface
   - Mac terminal, Windows Command Prompt
 * Infrastructure provider
   - Amazon Web Services, Azure, Terraform Cloud, Google Cloud Platform, Oracle Cloud, Docker
 
+##Installing Terraform
+
 To install Terraform, 
-1. Simply visit [Terraform.io](https://developer.hashicorp.com/terraform/downloads).
+1. Visit [Terraform.io](https://developer.hashicorp.com/terraform/downloads).
 2. Select the operating system for your device.
 3. Download the latest version of Terraform.
 4. Open the download and follow the installation steps.
 
-Let's start creating some infrastructure.
+Let's start by creating some infrastructure.
 
-Most guys find it easiest to create a new directory on their local machine through the terminal. 
+##Creating Infrastructure
+
+1. Open your Command-Line Interface.
+2. Create a new directory on your local machine.
 
 ```shell
 $ mkdir terraform-demo
 $ cd terraform-demo
 ```
 
-Next, create a file for your Terraform configuration code.
+3. Next, create a file for your Terraform configuration code.
 
 ```shell
 $ touch main.tf
 ```
 
-Paste the following lines into the file.
+4. Paste the following lines into the file.
 
 ```hcl
 terraform {
@@ -60,24 +66,43 @@ resource "docker_image" "nginx" {
 }
 ```
 
-Initialize Terraform with the `init` command. The AWS provider will be installed. 
+##Applying provisions
+
+1. Initialize Terraform with the `init` command. The AWS provider will be installed. 
 
 ```shell
 $ terraform init
 ```
 
-Check for any errors. If it ran successfully, provision the resource with the `apply` command.
+2. Check for any errors. If it ran successfully, provision the resource with the `apply` command.
 
 ```shell
 $ terraform apply
 ```
 
-The command will take up to a few minutes to run and will display a message once the resource is created.
+3. The command will take up to a few minutes to run and will display a message once the resource is created.
 
-Finally, destroy the infrastructure.
+
+## Destroying Infrastructure
+
+1. Finally, destroy the infrastructure.
 
 ```shell
 $ terraform destroy
 ```
 
-Look for a message at the bottom of the output asking for confirmation. Type `yes` and hit ENTER. Terraform will destroy the resources it had created earlier.
+2. Look for a message at the bottom of the output asking for confirmation. Type `yes` and hit ENTER. Terraform will destroy the resources it had created earlier.
+
+
+#Next Steps
+
+
+In this section, start with a brief summary of what you have learned in this guide re-emphasizing the business value. 
+Then provide some guideance on the next steps to extend the user's knowledge. 
+Briefly describe what the user will do in the next guide if the current track is sequential.
+
+##Additional Resources
+* [Documentation](https://developer.hashicorp.com/terraform/docs)
+* [Tutorials](https://developer.hashicorp.com/terraform/tutorials)
+* [Webinars](https://www.hashicorp.com/events/webinars/recorded?product=terraform&type=all)
+* [Blogs](https://www.hashicorp.com/blog/products/terraform)
