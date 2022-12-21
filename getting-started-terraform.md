@@ -50,11 +50,11 @@ terraform {
   }
 }
 provider "docker" {
-  host = "unix:///var/run/docker.sock"
+    host = "unix:///var/run/docker.sock"
 }
 resource "docker_container" "nginx" {
-  image = docker_image.nginx.latest
-  name  = "training"
+  image = "${docker_image.nginx.latest}"
+  name = "training"
   ports {
     internal = 80
     external = 80
