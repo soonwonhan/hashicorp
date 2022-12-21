@@ -50,7 +50,7 @@ terraform {
   }
 }
 provider "docker" {
-    host = "unix:///var/run/docker.sock"
+  host = "unix:///var/run/docker.sock"
 }
 resource "docker_container" "nginx" {
   image = docker_image.nginx.latest
@@ -58,7 +58,7 @@ resource "docker_container" "nginx" {
   ports {
     internal = 80
     external = 80
-  }
+   }
 }
 resource "docker_image" "nginx" {
   name = "nginx:latest"
@@ -79,7 +79,7 @@ $ terraform init
 $ terraform apply
 ```
 
-3. The command will take up to a few minutes to run and will display a message once the resource is created.
+The command will take up to a few minutes to run and will display a message once the resource is created.
 
 
 ## Destroying Infrastructure
@@ -90,11 +90,11 @@ $ terraform apply
 $ terraform destroy
 ```
 
-2. Look for a message at the bottom of the output asking for confirmation. Type `yes` and hit ENTER. Terraform will destroy the resources it had created earlier.
+2. A message will appear at the bottom of the output asking for confirmation. Type `yes` and hit ENTER. Terraform will destroy the resources it had created earlier.
 
 
 # Next Steps
-You have successfully completed your first Terraform tutorial. You installed Terraform, applied your first file to AWS, and destroyed an infrastructure.
+You successfully completed your first Terraform tutorial! You installed Terraform, applied your first file to AWS, and destroyed an infrastructure.
 You can now move on to exploring more in-depth Terraform tutorials here: [Tutorials](https://developer.hashicorp.com/terraform/tutorials)
 
 ## Additional Resources
