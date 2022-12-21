@@ -20,7 +20,6 @@ To install Terraform,
 1. Visit [Terraform.io](https://developer.hashicorp.com/terraform/downloads).
 2. Select the operating system for your device.
 3. Download the latest version of Terraform.
-4. Open the download and follow the installation steps.
 
 Let's start by creating some infrastructure.
 
